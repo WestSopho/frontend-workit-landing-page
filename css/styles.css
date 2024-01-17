@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Fraunces";
+    src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+}
+
+:root{
+    /* Define colors */
+    --purple-dark: #24053E;
+    --turquois: #44FFA1;
+    --purple-gray: #584D62;
+    --light-gray: #FCF8FF;
+    --white: #FFFFFF;
+}
+
+body{
+    font-family: "Fraunces";
+}
