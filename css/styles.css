@@ -1,11 +1,14 @@
+/* Import font families */
 @font-face {
     font-family: "Fraunces";
-    src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+    src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype");
 }
 
 @font-face {
     font-family: "Manrope";
-    src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+    src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
+    format("truetype");
 }
 
 :root{
@@ -14,9 +17,71 @@
     --turquois: #44FFA1;
     --purple-gray: #584D62;
     --light-gray: #FCF8FF;
-    --white: #FFFFFF;
+    --white: #FFFFFF; 
 }
 
-body{
-    font-family: "Fraunces";
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+
+    /* Default font typography*/
+    font-family: "Manrope" !important;
+    line-height: 32px;
+    font-size: 16px;
+    
+}
+
+/* Define typography classes */
+.heading-l, .heading-m, .heading-s{
+    font-family: "Fraunces" !important; 
+    font-weight: 500;
+}
+
+.heading-l{
+    font-size: 80px; 
+    line-height: 80px;
+}   
+
+.heading-m{
+    font-size: 56px; 
+    line-height: 64px; 
+}
+
+.heading-s{
+    font-size: 32px; 
+    line-height: 40px; 
+}
+
+
+/* Define primary button and secondary button */
+.primary-button, .secondary-button{
+    padding: 0.75rem 1.25rem;
+    border-radius: 0;
+    font-weight: 700;
+}
+
+.primary-button{
+    background-color: var(--turquois);
+    color: var(--purple-dark); 
+}
+
+.primary-button:hover{
+    background-color: inherit;
+    color: var(--turquois);
+    border: 1px solid var(--turquois);
+}
+
+.secondary-button{
+    background-color: inherit;
+    color: var(--white);
+    text-decoration: underline;
+    text-decoration-color: var(--turquois);
+    text-decoration-thickness: 5px; 
+    text-underline-offset: 0.5rem;
+}
+
+.secondary-button:hover{
+    background-color: inherit;
+    color: var(--turquois);
 }
