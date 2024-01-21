@@ -1,0 +1,26 @@
+/* Media query for extra small devices and all devices */
+@media screen and (min-width: 0) {
+    .heading-l{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .header-content{
+        max-width: 300px;
+        margin: 10% 0;
+    }
+    header{
+        border-radius: 0 0 50% 50% / 0 0 3% 3%;
+    }
+    .image-wrapper{
+        max-width: 767px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+    
+}
+
+/* Media query for small devices and beyond */
+@media screen and (min-width: 576) {
+    
+}

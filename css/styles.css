@@ -11,50 +11,34 @@
     format("truetype");
 }
 
+/* Define colors */
 :root{
-    /* Define colors */
-    --purple-dark: #24053E;
-    --turquois: #44FFA1;
-    --purple-gray: #584D62;
-    --light-gray: #FCF8FF;
+    --dark-purple: #24053E;
+    --eucaplyptus: #44FFA1;
+    --davy-grey: #584D62;
+    --ghost-white: #FCF8FF;
     --white: #FFFFFF; 
 }
 
+/* Normalize HTML */
 *{
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
-
-    /* Default font typography*/
+    border: 1px solid red;
     font-family: "Manrope" !important;
-    line-height: 32px;
-    font-size: 16px;
-    
+}
+
+.bg-dark-purple{
+    background-color: var(--dark-purple);
 }
 
 /* Define typography classes */
 .heading-l, .heading-m, .heading-s{
     font-family: "Fraunces" !important; 
-    font-weight: 500;
 }
 
-.heading-l{
-    font-size: 80px; 
-    line-height: 80px;
-}   
-
-.heading-m{
-    font-size: 56px; 
-    line-height: 64px; 
-}
-
-.heading-s{
-    font-size: 32px; 
-    line-height: 40px; 
-}
-
-
-/* Define primary button and secondary button */
+/* Define button classes*/
 .primary-button, .secondary-button{
     padding: 0.75rem 1.25rem;
     border-radius: 0;
@@ -62,26 +46,27 @@
 }
 
 .primary-button{
-    background-color: var(--turquois);
-    color: var(--purple-dark); 
+    background-color: var(--eucaplyptus);
+    color: var(--dark-purple); 
 }
 
 .primary-button:hover{
     background-color: inherit;
-    color: var(--turquois);
-    border: 1px solid var(--turquois);
+    color: var(--eucaplyptus);
+    border: 1px solid var(--eucaplyptus);
 }
 
 .secondary-button{
     background-color: inherit;
     color: var(--white);
     text-decoration: underline;
-    text-decoration-color: var(--turquois);
+    text-decoration-color: var(--eucaplyptus);
     text-decoration-thickness: 5px; 
     text-underline-offset: 0.5rem;
+    line-height: 1.75rem;
 }
 
 .secondary-button:hover{
     background-color: inherit;
-    color: var(--turquois);
+    color: var(--eucaplyptus);
 }
