@@ -25,13 +25,18 @@
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
-    border: 1px solid red;
     font-family: "Manrope" !important;
 }
 
+/* Define background colors */
 .bg-dark-purple{
     background-color: var(--dark-purple);
 }
+
+.bg-ghost-white{
+    background-color: var(--ghost-white);
+}
+
 
 /* Define typography classes */
 .heading-l, .heading-m, .heading-s{
@@ -69,4 +74,20 @@
 .secondary-button:hover{
     background-color: inherit;
     color: var(--eucaplyptus);
+}
+
+/* Add circle enumeration */
+.circle{
+    height: 48px;
+    width: 48px;
+    border: 1px solid var(--dark-purple);
+    border-radius: 50%;
+
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-color: var(--eucaplyptus);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
 }
