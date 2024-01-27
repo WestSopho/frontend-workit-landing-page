@@ -43,6 +43,27 @@
     font-family: "Fraunces" !important; 
 }
 
+.normal{
+    font-family: "Manrope" !important;
+}
+
+/* Define trait title and trait */
+.trait-title{
+    font-weight: 600;
+    color: var(--dark-purple);
+    text-align: center;
+    font-family: "Fraunces" !important;
+}
+
+.trait-info{
+    font-family: "Manrope" !important;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Define creator section */
+
+
 /* Define button classes*/
 .primary-button, .secondary-button{
     padding: 0.75rem 1.25rem;
@@ -80,9 +101,11 @@
 .circle{
     height: 48px;
     width: 48px;
-    border: 1px solid var(--dark-purple);
+    padding: 20px;
+    border: 1px solid var(--davy-grey);
     border-radius: 50%;
-
+    font-family: "Fraunces" !important;
+    font-weight: 600;
 }
 
 .underline{

@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body class="min-vh-100 overflow-x-hidden">
+<body class="min-vh-100">
   <!-- Header -->
-  <div class="bg-ghost-white">
+  <div class="bg-ghost-white overflow-x-hidden">
     <header class="bg-dark-purple w-100">
       <!-- Header Bar -->
       <div class="header-bar d-flex justify-content-between">
@@ -24,7 +24,7 @@
       <!-- Header Content Wrapper -->
       <div class="position-relative d-flex flex-column justify-content-center align-items-center">
         <!-- Header Content -->
-        <div class="header-content d-flex flex-column justify-content-center align-items-center gap-3 p-sm-1 p-md-0">
+        <div class="p-1 header-content d-flex flex-column justify-content-center align-items-center gap-3 p-sm-1 p-md-0">
           <div class="heading-l text-center text-white">Data <span class="heading-l underline">tailored</span> to your needs</div>
           <button class="btn primary-button">Learn more</button>
         </div>
@@ -46,46 +46,54 @@
 
   <!-- Main -->
   <div class="bg-white">
-    <main class="container-fluid bg-ghost-white">
+    <main class="bg-ghost-white container-fluid">
       <!-- Row  -->
-      <div class="row py-5">
+      <div class="row">
         <!-- Col 1  -->
-        <div class="col-12">
+        <div class="col-12 col-md-4">
           <!-- Traits -->
-          <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+          <div class="d-flex flex-column flex-sm-row flex-md-column justify-content-center align-items-center gap-3">
             <div class="circle d-flex justify-content-center align-items-center">
               1
             </div>
-            <div>Actionable insights</div>
-            <div>Optimize your products, improve customer satisfaction and stay ahead of the competition 
+            <div class="d-flex flex-column gap-2">
+              <div class="trait-title">Actionable insights</div>
+              <div class="trait-info">Optimize your products, improve customer satisfaction and stay ahead of the competition 
               with our product data analytics.</div>
+            </div>
+            
           </div>
         </div>
         <!-- Col 2 -->
-        <div class="col-12">
+        <div class="col-12 col-md-4">
           <!-- Traits -->
-          <div class="d-flex flex-column justify-content-center align-items-center">
+          <div class="d-flex flex-column flex-sm-row flex-md-column justify-content-center align-items-center gap-3">
             <div class="circle d-flex justify-content-center align-items-center">2</div>
-            <div>
-              Data-driven decisions
+            <div class="d-flex flex-column gap-2">
+              <div class="trait-title">
+                Data-driven decisions
+              </div>
+              <div class="trait-info">
+                Make data-driven decisions with our product data analytics. Our AI-generated reports help 
+                you unlock insights hidden in your product data.
+              </div>
             </div>
-            <div>
-              Make data-driven decisions with our product data analytics. Our AI-generated reports help 
-              you unlock insights hidden in your product data.
-            </div>
+            
           </div>
         </div>
         <!-- Col 3 -->
-        <div class="col-12">
+        <div class="col-12 col-md-4">
           <!-- Traits -->
-          <div class="d-flex flex-column justify-content-center align-items-center">
+          <div class="d-flex flex-column flex-sm-row flex-md-column justify-content-center align-items-center gap-3">
             <div class="circle d-flex justify-content-center align-items-center">3</div>
-            <div>
-              Always affordable
-            </div>
-            <div>
-              Always affordable pricing that scales with your business. Get top-quality product data 
-              analytics services without hidden costs or unexpected fees.
+            <div class="d-flex flex-column">
+              <div class="trait-title">
+                Always affordable
+              </div>
+              <div class="trait-info">
+                Always affordable pricing that scales with your business. Get top-quality product data 
+                analytics services without hidden costs or unexpected fees.
+              </div>
             </div>
           </div>
         </div>
@@ -94,25 +102,34 @@
   </div>
 
   <!-- Creator -->
-  <div class="creator py-5">
-    <div class="creator-img w-100">
+  <div class="creator">
+    <div class="creator-img">
       <img class="w-100" src="assets/images/image-founder.webp" alt="">
     </div>
-    <div class="creator-info position-relative z-1">
-      <div>Be the first to test</div>
-      <div>Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
-        beta tester for our app and kickstart your company. Apply for access below and I’ll be 
-        in touch to schedule a call.</div>
+    <div class="d-flex justify-content-end">
+      <div class="creator-info position-relative z-1 p-2 p-sm-5">
+        <div class="c-title text-center">Be the first to test</div>
+        <div class="c-msg text-center">Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
+          beta tester for our app and kickstart your company. Apply for access below and I’ll be 
+          in touch to schedule a call.
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="btn primary-button">Apply for Access</button>
+        </div>
+        <div class="creator-pattern position-absolute d-none d-sm-block">
+          <img src="assets/images/bg-pattern-3.svg" alt="">
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer>
+  <footer class="py-4">
     <div class="w-100 d-flex flex-column justify-content-center align-items-center">
       <div>
         <img src="assets/images/logo-dark.svg" alt="workit logo dark">
       </div>
-      <div class="row">
+      <div class="row p-5">
         <div class="col-4">
           <img src="assets/images/icon-facebook.svg" alt="webkit facebook">
         </div>
